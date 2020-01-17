@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="co.jp.ths.api.dao.UserDao">
+
+	<resultMap id="User" type="co.jp.ths.api.entity.User">
+		<result property="username" column="username" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="password" column="password" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="shopAuth" column="shopAuth" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="userAuth" column="userAuth" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="createTime" column="create_time" />
+		<result property="updateTime" column="update_time" />
+	</resultMap>
+
+	<select id="selectByKeyword" parameterType="java.lang.String" resultMap="User">
+		select username, password, userAuth, shopAuth, create_time, update_time from user
+		<if test="_parameter != null">
+            where username like #{keyword,jdbcType=VARCHAR}
+		</if> 
+	</select>
+	
+	<select id="selectOneByName" parameterType="java.lang.String" resultType="java.lang.Integer">
+		select count(*) from user where username = #{keyword,jdbcType=VARCHAR}
+	</select>
+	
+	<select id="validateUserPass" resultMap="User">
+		select username, password, userAuth, shopAuth, create_time, update_time from user 
+		where username = #{username,jdbcType=VARCHAR}
+		and password = #{password,jdbcType=VARCHAR}
+	</select>
+	
+	<select id="selectAll" parameterType="java.lang.String"	resultMap="User">
+		select username, password, userAuth, shopAuth, create_time, update_time from user
+	</select>
+    
+	<select id="countAll" parameterType="java.lang.String"
+	    resultType="java.lang.Integer">
+        select count(*) from user
+    </select>
+    
+    <insert id="insert" parameterType="User">
+    <![CDATA[
+        insert into user(
+            username,
+            password,
+            shopAuth,
+            userAuth,
+            create_time
+        )
+        values(
+            #{username},
+            #{password},
+            #{shopAuth},
+            #{userAuth},
+            current_timestamp
+        )
+    ]]>
+    </insert>
+    
+    <update id="update" parameterType="User">
+            update user
+            <set>
+                update_time=current_timestamp,
+                password=#{password},
+                shopAuth=#{shopAuth},
+                userAuth=#{userAuth}
+            </set>
+            where username=#{username, jdbcType=VARCHAR}
+    </update>
+    
+    <delete id="delete" parameterType="java.lang.String">
+            delete from user
+            where username=#{username, jdbcType=VARCHAR}
+    </delete>
+</mapper>

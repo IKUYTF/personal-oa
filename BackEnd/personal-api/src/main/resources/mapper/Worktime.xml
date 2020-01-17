@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="co.jp.ths.api.dao.WorktimeDao">
+
+	<resultMap id="worktime" type="co.jp.ths.api.entity.Worktime">
+		<result property="date" column="date" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="startTime" column="start_time" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="endTime" column="end_time" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="type" column="type" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+        <result property="restMemo" column="rest_memo" javaType="java.lang.String"
+            jdbcType="VARCHAR" />
+        <result property="user" column="user" javaType="java.lang.String"
+            jdbcType="VARCHAR" />
+		<result property="createTime" column="create_time" />
+		<result property="updateTime" column="update_time" />
+	</resultMap>
+
+	<select id="selectAll" parameterType="worktime"	resultMap="worktime">
+		select date, start_time, end_time, type, rest_memo, user from worktime
+		where user = #{user,jdbcType=VARCHAR} and left(date,7) = #{date,jdbcType=VARCHAR}
+	</select>
+    
+	<select id="countAll" parameterType="java.lang.String"
+	    resultType="java.lang.Integer">
+        select count(*) from worktime
+    </select>
+    
+    <insert id="insert" parameterType="worktime">
+    <![CDATA[
+        insert into worktime(
+            date,
+            start_time,
+            end_time,
+            type,
+            rest_memo,
+            user, 
+            create_time
+        )
+        values(
+            #{date},
+            #{startTime},
+            #{endTime},
+            #{type},
+            #{restMemo},
+            #{user},
+            current_timestamp
+        )
+    ]]>
+    </insert>
+    
+    <update id="update" parameterType="worktime">
+            update worktime
+            <set>
+                update_time=current_timestamp,
+                date=#{date},
+                start_time=#{startTime},
+                end_time=#{endTime},
+                type=#{type},
+                rest_memo=#{restMemo},
+                user=#{user}
+            </set>
+            where date=#{date, jdbcType=VARCHAR} and user=#{user, jdbcType=VARCHAR}
+    </update>
+
+
+</mapper>

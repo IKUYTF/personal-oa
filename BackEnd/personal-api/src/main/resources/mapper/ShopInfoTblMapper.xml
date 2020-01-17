@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="co.jp.ths.api.dao.ShopInfoTblDao">
+
+	<resultMap id="shopInfoTbl" type="co.jp.ths.api.entity.ShopInfoTbl">
+		<result property="shopName" column="shop_name" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="shopUuid" column="shop_uuid" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="shopCode" column="shop_code" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="address" column="address" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+        <result property="details" column="details" javaType="java.lang.String"
+            jdbcType="VARCHAR" />
+        <result property="certPath" column="cert_path" javaType="java.lang.String"
+            jdbcType="VARCHAR" />
+        <result property="certFlag" column="cert_flag" javaType="java.lang.String"
+            jdbcType="VARCHAR" />
+		<result property="createTime" column="create_time" />
+		<result property="updateTime" column="update_time" />
+	</resultMap>
+
+	<select id="selectByKeyword" parameterType="java.lang.String" resultMap="shopInfoTbl">
+		select shop_name, shop_uuid, shop_code, address, details, cert_path, create_time, update_time from shop_info_tbl
+		<if test="_parameter != null">
+            where shop_name like #{keyword,jdbcType=VARCHAR} or shop_code like #{keyword,jdbcType=VARCHAR}
+		</if> 
+	</select>
+	
+	
+	<select id="selectAll" parameterType="java.lang.String"	resultMap="shopInfoTbl">
+		select shop_name, shop_uuid, shop_code, address, details, cert_path, cert_flag, create_time, update_time from shop_info_tbl
+	</select>
+	
+	<select id="selectOne" parameterType="java.lang.String"	resultMap="shopInfoTbl">
+		select shop_name, shop_uuid, shop_code, address, details, cert_path, cert_flag, create_time, update_time 
+		from shop_info_tbl where shop_code = #{keyword,jdbcType=VARCHAR}
+	</select>
+    
+	<select id="countAll" parameterType="java.lang.String"
+	    resultType="java.lang.Integer">
+        select count(*) from shop_info_tbl
+    </select>
+    
+    <insert id="insert" parameterType="shopInfoTbl">
+    <![CDATA[
+        insert into shop_info_tbl(
+            shop_name,
+            shop_uuid,
+            shop_code,
+            address,
+            details,
+            cert_path, 
+            create_time
+        )
+        values(
+            #{shopName},
+            #{shopUuid},
+            #{shopCode},
+            #{address},
+            #{details},
+            #{certPath},
+            current_timestamp
+        )
+    ]]>
+    </insert>
+    
+    <update id="update" parameterType="shopInfoTbl">
+            update shop_info_tbl
+            <set>
+                update_time=current_timestamp,
+                shop_name=#{shopName},
+                shop_code=#{shopCode},
+                address=#{address},
+                details=#{details},
+                cert_path=#{certPath}
+            </set>
+            where shop_uuid=#{shopUuid, jdbcType=VARCHAR}
+    </update>
+
+    
+    <delete id="delete" parameterType="java.lang.String">
+            delete from shop_info_tbl
+            where shop_uuid=#{shopUuid, jdbcType=VARCHAR}
+    </delete>
+</mapper>

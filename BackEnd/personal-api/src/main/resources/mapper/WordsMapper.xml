@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="co.jp.ths.api.dao.WordsDao">
+
+	<resultMap id="words" type="co.jp.ths.api.entity.Words">
+		<result property="word" column="word" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="pron" column="pron" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="type" column="type" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+		<result property="meaning" column="meaning" javaType="java.lang.String"
+			jdbcType="VARCHAR" />
+        <result property="example" column="example" javaType="java.lang.String"
+            jdbcType="VARCHAR" />
+		<result property="createTime" column="create_time" />
+		<result property="updateTime" column="update_time" />
+	</resultMap>
+
+	<select id="selectByKeyword" parameterType="java.lang.String" resultMap="words">
+		select word, pron, type, meaning, example, create_time, update_time from words
+		<if test="_parameter != null">
+            where word like #{keyword,jdbcType=VARCHAR} or pron like #{keyword,jdbcType=VARCHAR}
+            or meaning like #{keyword,jdbcType=VARCHAR} or example like #{keyword,jdbcType=VARCHAR}
+		</if> 
+	</select>
+	
+	
+	<select id="selectAll" parameterType="java.lang.String"	resultMap="words">
+		select word, pron, type, meaning, example, create_time, update_time from words
+	</select>
+	
+	<select id="countAll" parameterType="java.lang.String"
+	    resultType="java.lang.Integer">
+        select count(*) from words
+    </select>
+    
+    <insert id="insert" parameterType="words">
+    <![CDATA[
+        insert into words(
+            word,
+            pron,
+            type,
+            meaning,
+            example,
+            create_time
+        )
+        values(
+            #{word},
+            #{pron},
+            #{type},
+            #{meaning},
+            #{example},
+            current_timestamp
+        )
+    ]]>
+    </insert>
+    
+    <update id="update" parameterType="words">
+            update words
+            <set>
+                update_time=current_timestamp,
+                word=#{word},
+                pron=#{pron},
+                type=#{type},
+                meaning=#{meaning},
+                example=#{example}
+            </set>
+            where word=#{word, jdbcType=VARCHAR}
+    </update>
+
+
+</mapper>

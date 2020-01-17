@@ -1,0 +1,19 @@
+server:
+   port: 8200
+   
+spring:
+   datasource:
+      url: jdbc:mysql://localhost:3306/manage_system?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+
+# mybatis.config= classpath:mybatis-config.xml
+mybatis:
+   mapper-locations: classpath:mapper/*.xml
+   type-aliases-package: co.jp.ths.api.entity
+   
+   
+web.upload-path: D://devFolder//fileServer//Certificate
+spring.mvc.static-path-pattern: /**
+spring.resources.static-locations: classpath\:/META-INF/resources/,classpath\:/resources/,classpath\:/static/,classpath\:/public/,file\:${web.upload-path}classpath:/static/,classpath:/public/,file:${web.upload-path}
