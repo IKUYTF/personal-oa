@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/*
+TOP
+*/
+
+.index {
+	background-color: #F9F7F7;
+}
+.indexWrap {
+	background-color:#F9F7F7;
+}
+
+.indexWrap .attentionArea {
+	margin:20px 4% 15px;
+}
+.indexWrap.wrap {
+	padding: 0 0 20px;
+}
+.indexWrap h1{
+	width:200px;
+	margin:15px auto 15px;
+}
+.indexWrap h1 img {
+	width:100%;
+}
+.indexWrap .topArea {
+	background-image:url(../images/index/bg_line.png);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+	background-size:5px 8px;
+	padding: 0 0 15px;
+}
+.indexWrap .topMainArea {
+	margin:0 4% 5px;
+	overflow:hidden;
+	position:relative;
+}
+.indexWrap .topMainArea img {
+	width:100%;
+}
+.indexWrap .topMainArea a {
+	display:block;
+	position:absolute;
+	right:0;
+	top:58%;
+	width:44.024%;
+}
+.indexWrap p.agreeLink {
+	padding:1px 0;
+}
+.indexWrap p.agreeLink a {
+	color:#FF5700;
+	text-decoration:underline;
+}
+.indexWrap .agreeButton a,
+.indexWrap .agreeButton button {
+	color:#FFF;
+	background-color:#E7E7E7;
+	pointer-events:none;
+}
+.indexWrap .btmArea {
+	margin:15px 0 0;
+}
+.indexWrap .agreeCheckArea {
+	margin:0 4%;
+}
+.indexWrap .agreeCheckArea p.payStartText {
+	font-size:3.8vw;
+	padding:0 0 10px;
+	font-weight:bold;
+}
+.indexWrap .agreeCheckArea ul li {
+	text-indent:-1em;
+	font-size:3.8vw;
+	padding:0 0 5px 1em;
+}
+.indexWrap .agreeCheckArea ul li .rice {
+	text-indent:-1em;
+	font-size:3.8vw;
+	padding-left:1em;
+}
+.indexWrap .agreeButton.on a,
+.indexWrap .agreeButton.on button {
+	background-color:#FF5700;
+	pointer-events:auto;
+}
+.indexWrap .topAgreeArea {
+	margin: 10px 4% 20px;
+	text-align:center;
+	font-size:3.8vw;
+	font-weight:bold;
+	background-color:#FFF;
+	padding:10px 0;
+}
+.indexWrap .topAgreeArea label input {
+	display:none;
+}
+.indexWrap .topAgreeArea label {
+	background-position: left center;
+	background-image: url(../images/common/ico_check_off.png);
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	font-size: 4.4vw;
+	padding: 10px 0 10px 38px;
+}
+.indexWrap .topAgreeArea label.on {
+	background-position:left center;
+	background-image:url(../images/common/ico_check_on.png);
+	background-repeat:no-repeat;
+	background-size:30px 30px;
+}
+.indexWrap .agreeErrorText {
+	color: #F72420;
+	font-size: 3.2vw;
+	margin: 0;
+	padding: 8px 4% 0 4%;
+}
+
+/*
+完了
+*/
+
+.registFinishWrap {
+}
+.registFinishWrap .attentionArea {
+	margin: -20px 4% 35px;
+}
+.registFinish {
+	background-color:#F9F7F7;
+}
+.registFinishWrap h1 {
+	font-size:5.2vw;
+	font-weight:bold;
+	text-align:center;
+	padding:0 0 15px;
+	color:#656565;
+}
+.registFinishWrap .flex-control-nav {
+	bottom: -30px;
+}
+.registFinishWrap.wrap {
+	padding: 25px 0 20px;
+}
+.registFinish .flexslider {
+	margin:0 auto 50px;
+}
+.registFinish .flexslider img {
+}
+.registFinishWrap .endButton a,
+.registFinishWrap .endButton button {
+	color:#FFF;
+	background-color:#FF7C02;
+}
+.registFinish .slick-prev {
+	display:none !important;
+}
+.registFinish .slick-next {
+	right: 0;
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	-webkit-transform: translate(0, 0%);
+	-ms-transform: translate(0, 0%);
+	transform: translate(0, 0%);
+}
+
+.registFinish .slick-next:before {
+	content: '';
+}
+.registFinish .slick-dots li button {
+	background-color:#E7E7E7;
+	border-radius:100px;
+	width: 10px;
+	height: 10px;
+	opacity:1;
+}
+.registFinish .slick-dots li.slick-active button {
+	background-color:#FF6600;
+}
+.registFinish .slick-dots li button:before {
+	content: '';
+}
+.registFinish .slick-dots {
+    bottom: -22px;
+}
+
+/*
+規約
+*/
+
+
+
+.agree {
+	background-color:#F9F7F7;
+}
+.agreeWrap {
+	background-color:#F9F7F7;
+}
+.agreeWrap.wrap {
+	padding: 0 0 0;
+}
+.agreeWrap .agreeTopArea {
+	width: 92% !important;
+	border:1px solid #B7B7B7;
+	margin: 20px auto 0;
+	overflow:auto !important;
+	-webkit-overflow-scrolling:touch !important;
+}
+.agreeWrap iframe{
+	width:100% !important;
+	overflow:auto !important;
+	-webkit-overflow-scrolling:touch !important;
+}
+
+.agreeWrap .agreeButtonArea {
+	position:fixed;
+	width:100%;
+	bottom:0;
+	background-color:#FFF;
+	left:0;
+	padding:15px 0 15px;
+}
+.agreeWrap .agreeButtonArea {
+	position:fixed;
+	width:100%;
+	bottom:0;
+	background-color:#F9F7F7;
+	left:0;
+	padding:15px 0 15px;
+}
+.agreeWrap .prevButton a,
+.agreeWrap .prevButton button {
+	color:#FFF;
+	background-color:#FF7C02;
+}
+.agreeWrap .attentionArea {
+	margin: 20px 4% 20px;
+}

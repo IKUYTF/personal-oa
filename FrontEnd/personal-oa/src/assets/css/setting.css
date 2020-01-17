@@ -1,0 +1,449 @@
+@charset "utf-8";
+
+/*
+支払
+*/
+.setting,
+.settingWrap {
+	background-color:#919191;
+}
+.bgWhite {
+	background-color:#FFFFFF!important;
+}
+.bgLightGray {
+	background-color:#F9F7F8!important;
+}
+.importantInfoArea {
+	background-color:#FFF;
+	margin:15px 4% 0;
+	border: 1px solid #E7E7E7;
+	border-radius:3px;
+	padding:10px 4%;
+}
+.importantInfoArea h2 {
+	font-size:4.2vw;
+	font-weight:bold;
+	color:#FF0000;
+	padding-bottom:5px;
+}
+.importantInfoArea dl {
+	font-size:3.8vw;
+	display:flex;
+	padding-bottom:8px;
+}
+.importantInfoArea dl:last-child {
+	padding-bottom:0px;
+}
+.importantInfoArea dl dt {
+	font-size: 3.8vw;
+	width: 26.5%;
+}
+ .importantInfoArea dl dd {
+	width: 73.5%;
+}
+.importantInfoArea dl dd a {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.importantInfoArea dl dd a {
+	color:#269E56;
+	text-decoration:underline;
+}
+
+
+.settingWrap.wrap {
+	padding: 70px 0 20px;
+}
+.setting header ul{
+	border-bottom:8px solid #919191;
+}
+.setting header ul li.current {
+	background-color:#919191;
+	border:none;
+}
+.settingWrap .titleArea {
+	margin: 0 4%;
+}
+.settingWrap p {
+	font-size:3.4vw;
+}
+.settingWrap p.rice1 {
+	text-indent:-6vw;
+	padding-left:6vw;
+	margin-bottom:10px;
+}
+.settingWrap .settingDetailArea {
+	margin:15px 0 0;
+}
+.settingWrap .settingTxtArea {
+	margin:15px 4%;
+}
+.settingWrap .settingTxtArea.mt25 {
+	margin-top:25px;
+}
+.settingWrap .settingTxtArea p {
+	font-size: 3.2vw;
+}
+.settingWrap .settingTxtArea p.settingMainTxt {
+	font-size: 4.6vw;
+	padding-bottom:30px;
+}
+.settingWrap .settingTxtArea p.headingTxt {
+	font-size: 4.0vw;
+}
+.settingWrap .settingTxtArea p.settingErrorTxt {
+	color: #FF0000!important;
+}
+.settingWrap .settingTxtArea .settingInputArea {
+	padding-bottom:20px;
+}
+.settingWrap .selectWrap{
+	width: 100%;
+	position: relative;
+	display: inline-block;
+}
+.settingWrap .selectWrap::after {
+	content: '';
+	width: 6px;
+	height: 6px;
+	border: 0px;
+	border-bottom: solid 2px #b4b3b3;
+	border-right: solid 2px #b4b3b3;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	position: absolute;
+	top: 13px;
+	right: 13px;
+}
+.settingWrap .settingTxtArea select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 2px 0;
+	padding: 10px;
+	width: 100%;
+	background: #F3F1F2;
+	border: none;
+	border-radius: 0;
+	font-size: 4.0vw;
+	line-height: 1;
+}
+.settingWrap .questionSelectWrap label{
+	margin: 2px 0;
+	padding: 10px;
+	border: none;
+	border-radius: 0;
+	font-size: 4.0vw;
+	line-height: 1;
+	display:block;
+}
+.settingWrap .wideButtonDefault button,
+.settingWrap .wideButtonDefault a {
+	background-color: #FF7200;
+	color: #FFF;
+}
+.settingWrap .chargeSelectArea {
+	margin-top: 100px ;
+}
+.settingWrap .centerTxt {
+	text-align:center;
+}
+.settingWrap p.linkTxt {
+	padding:20px 0;
+	font-size: 4.0vw;
+}
+.settingWrap .linkTxt a {
+	text-decoration:underline;
+	color:#FF7200;
+}
+.settingWrap .menuSelectArea {
+	margin: 15px 0 0;
+}
+.settingWrap .menuSelectArea h2{
+	padding: 10px 4%;
+	color:#656364;
+}
+.settingWrap .menuSelectArea p {
+	background:#FFFFFF;
+	font-size: 4.0vw;
+	padding: 5px 4% 5px 8%;
+}
+.settingWrap .menuSelectArea ul {
+	background:#FFFFFF;
+}
+.settingWrap .menuSelectArea ul li {
+	border-bottom: 1px solid #F9F7F8;
+	background: url(../images/common/ico_arrow.png) no-repeat right 4% center;
+	background-size:7px;
+}
+.settingWrap .menuSelectArea ul li:last-child {
+	border-bottom: none;
+}
+.settingWrap .menuSelectArea ul li a {
+	display: block;
+	padding: 12px 4% 12px 8%;
+	margin: 3px 0;
+}
+.settingWrap .registerCardList {
+	margin: 15px 4% 40px;
+}
+.settingWrap .registerCardList ul li{
+	text-align: center;
+	border:1px solid #FFC991;
+	padding:15px 5px 10px;
+	margin-bottom:10px;
+}
+.settingWrap .registerCardList ul li img {
+	padding-bottom: 5px;
+}
+.settingWrap .registerCardList ul.cardList1 {
+	font-size: 3.2vw;
+}
+.settingWrap .registerCardList ul.cardList1 img {
+	width:40%;
+}
+.settingWrap .registerCardList ul.cardList1 img.cardTwo {
+	width:80%;
+}
+.settingWrap .registerCardList ul.cardList2 {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-direction: row;
+	padding-bottom: 10px;
+}
+.settingWrap .registerCardList ul.cardList2 li {
+	width:28%;
+	font-size: 2.9vw;
+	border:1px solid #E7E7E7;
+}
+.settingWrap .registerCardList ul.cardList2 li.dummy {
+	border:none;
+}
+.settingWrap .registerCardList ul.cardList2 img {
+	width:70%;
+}
+.settingWrap .cardAddArea {
+	margin:15px 0 0;
+}
+.settingWrap .cardAddButton {
+	position: absolute;
+	top: 78px;
+	right: 4%;
+}
+.settingWrap .cardAddButton a {
+	display: block;
+	line-height: 1em;
+	padding: 10px 0.5vw;
+	background: #FF7200;
+	border-radius: 10px;
+	width: 17vw;
+	text-align: center;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 3.4vw;
+}
+
+.settingWrap .cardAddArea .cardSelectBox {
+	border-top: 1px solid #E8E8E8;
+	font-size: 3.4vw;
+	display: block;
+	color: #000;
+	margin: 0px 4%;
+	padding: 15px 0;
+	font-weight: normal;
+	text-align: left;
+	overflow: hidden;
+	position:relative;
+}
+.settingWrap .cardAddArea ul li:last-child .cardSelectBox{
+	border-bottom: 1px solid #E8E8E8;
+}
+.settingWrap .cardAddArea li.unavailableCard {
+	background:#E7E7E7;
+}
+.settingWrap .cardAddArea .cardSelectBox img {
+	width: 36px;
+	float: left;
+	padding: 7% 5% 7% 0;
+}
+.settingWrap .cardAddArea .cardSelectBox span.text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 4.2vw;
+	line-height: 1.3em;
+	font-weight: bold;
+	display: block;
+	padding-right: 12%;
+}
+.settingWrap .cardAddArea .cardSelectBox span.text span {
+	font-size: 4.0vw;
+	font-weight: normal;
+}
+.settingWrap .cardAddArea .cardSelectBox span.textSmall {
+	padding-top: 2px;
+	font-size: 3.2vw;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-right: 12%;
+	line-height: 1.3em;
+	display: block;
+	color: #7F7F7F;
+}
+.settingWrap .cardAddArea .cardSelectBox span.cardDeleteButton {
+	position: absolute;
+	top: 42%;
+	right: 0;
+}
+.settingWrap .cardAddArea .cardSelectBox span.cardDeleteButton a {
+	border: 1px solid #FF7200;
+	border-radius:3px;
+	padding: 3px;
+	color: #FF7200;
+	background:#FFFFFF;
+}
+.settingWrap .cardAddArea .cardSelectBox span.unavailableCardText {
+	background: url(../images/common/ico_unavailablecard.png) no-repeat left center;
+	background-size: 3.5vw;
+	padding-left: 4vw;
+	font-size: 3.2vw;
+}
+
+/** モーダル **/
+.modal-bg {
+	display:none;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.5);
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 11;
+}
+.overlayButtunArea {
+	display: none;
+	width: 90%;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	color: #666666;
+	position:fixed;
+	z-index: 12;
+	top: 50%;
+}
+.overlayButtunInner {
+	padding:4%;
+}
+.overlayButtunInner ul {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 15px 0;
+}
+.overlayButtunInner ul li {
+	width:48.5%;
+}
+.overlayButtunInner ul li a{
+	text-align:center;
+	color:#FF7200;
+	border: 1px solid #FF7200;
+	border-radius: 10px;
+	font-weight:bold;
+	font-size:4.6vw;
+	padding:15px 0;
+	display: block;
+}
+.overlayButtunInner ul li.cancel {
+	text-align:center;
+	color:#FF7200;
+	border: 1px solid #FF7200;
+	border-radius: 10px;
+	font-weight:bold;
+	font-size:4.6vw;
+	padding:15px 0;
+	display: block;
+}
+.settingWrap .overlayButtunInner p {
+	text-align:center;
+	font-weight:bold;
+	font-size:4.6vw;
+	padding:50px 0;
+}
+/** トグルボタン **/
+li.toggleArea {
+	position: relative;
+	background:none!important;
+	padding: 15px 4% 15px 8%;
+}
+.togglebtn {
+	position: absolute;
+	top: 15px;
+	right: 4%;
+}
+.togglebtn input {
+	display: none;
+}
+.togglebtn label,
+.togglebtn label::before,
+.togglebtn label::after {
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+.togglebtn label {
+	display: inline-block;
+	position: relative;
+	width: 50px;
+	height: 30px;
+	border-radius: 24px;
+	cursor: pointer;
+	line-height: 1.0;
+}
+.togglebtn label::before {
+	display: block;
+	content: attr(data-off-label);
+	position: absolute;
+	top: 9px;
+	right: 4%;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
+.togglebtn label::after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 26px;
+	height: 26px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+.togglebtn label.checked::before {
+	content: attr(data-on-label);
+	left: 23px;
+	right: auto;
+	color: #fff;
+}
+.togglebtn label.checked::after {
+	left: 22px;
+	background-color: #fff;
+}
+/* togglebtn color */
+.togglebtn label {
+	background-color: #aaa;
+}
+.togglebtn label::before {
+	color: #fff;
+}
+.togglebtn label.checked {
+	background-color: #FF7200;
+}
+.togglebtn label.checked::before {
+	color: #fff;
+}
+

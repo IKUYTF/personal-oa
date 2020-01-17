@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+.history header ul,
+.historyDetail header ul {
+	border-bottom: 8px solid #919191;
+}
+.history header ul li.current,
+.historyDetail header ul li.current {
+	background-color: #919191;
+	border: none;
+}
+
+/*
+残高・履歴画面
+*/
+.history,
+.historyWrap {
+	background-color:#FFFFFF;
+}
+.historyWrap.wrap {
+	padding: 60px 0 100px;
+}
+.historyWrap .historyTopArea {
+	position: fixed;
+	width: 100%;
+	background-color: #FFF;
+	padding:10px 0 0;
+}
+.historyWrap .importantInfoArea {
+	background-color:#FFF;
+	margin:15px 4% 0;
+	border: 1px solid #E7E7E7;
+	border-radius:3px;
+	padding:10px 4%;
+}
+.historyWrap .importantInfoArea h2 {
+	font-size:4.2vw;
+	font-weight:bold;
+	color:#FF0000;
+	padding-bottom:5px;
+}
+.historyWrap .importantInfoArea dl {
+	font-size:3.8vw;
+	display:flex;
+	padding-bottom:8px;
+}
+.historyWrap .importantInfoArea dl:last-child {
+	padding-bottom:0px;
+}
+.historyWrap .importantInfoArea dl dt {
+	font-size: 3.8vw;
+	width: 26.5%;
+}
+.historyWrap .importantInfoArea dl dd {
+	width: 73.5%;
+}
+.historyWrap .importantInfoArea dl dd a {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.historyWrap .importantInfoArea dl dd a {
+	color:#269E56;
+	text-decoration:underline;
+}
+.historyWrap .historyListArea {
+	margin:20px 4% 0;
+}
+.historyWrap .historyListTop {
+	overflow:hidden;
+	color:#282828;
+	padding: 15px 4%;
+}
+.historyWrap .historyListTop .historyTitle {
+	float:left;
+	font-size:3.8vw;
+	font-weight:bold;
+}
+.historyWrap .historyListTop .histTopMoney {
+	float: right;
+	text-align: right;
+	width: 64%;
+}
+.historyWrap .historyListTop .histTopMoney .icoWrap {
+	padding-right:10px;
+	text-align:center;
+}
+.historyWrap .historyListTop .histTopMoney .update {
+	width:17px;
+}
+.historyWrap .historyListTop .histTopMoney .update img{
+	width:100%;
+}
+.historyWrap .historyListTop .histTopMoney .money span {
+	padding-left: 7%;
+	vertical-align: baseline;
+	font-size:11.5vw;
+	line-height:11.5vw;
+}
+.historyWrap .historyListTop .histTopMoney .money {
+	font-size:5.8vw;
+}
+
+.historyWrap .historyListArea ul,
+.historyWrap .historyListArea {
+	border-top:1px solid #E8E8E8;
+}
+.historyWrap .historyListArea.noHistory {
+	border-top:none;
+}
+.historyWrap .historyListArea.noHistory p {
+	color:#646464;
+	font-size:4.2vw;
+	text-align:center;
+	padding:30px 0 0 0;
+}
+.historyWrap .historyListArea dl {
+	border-bottom:1px solid #E8E8E8;
+	padding:12px 0;
+}
+.historyWrap .historyListArea dl span {
+	display:block;
+}
+.historyWrap .historyListArea dl dd {
+	display:none;
+}
+.historyWrap .historyListArea dl .detailTop{
+	overflow:hidden;
+}
+.historyWrap .historyListArea dl .detailTop .detailTopDate{
+	float:left;
+	padding-top: 4px;
+}
+.historyWrap .historyListArea dl .detailTop .money{
+	float:right;
+	white-space: nowrap;
+	font-weight:bold;
+	font-size: 4.8vw;
+	text-align: right;
+}
+.historyWrap .historyListArea dl .detailTop .money span,
+.historyWrap .historyListArea dl .point span{
+	display:unset;
+}
+.historyWrap .historyListArea dl .ico{
+	float:left;
+	text-align:left;
+	color:#FFF;
+	font-size:2.9vw;
+	padding:2px 4px 1px;
+	border-radius:3px;
+}
+.historyWrap .historyListArea dl .ico.payment {
+	background-color:#FF5700;
+}
+.historyWrap .historyListArea dl .ico.charge {
+	background-color:#34A762;
+}
+
+
+.historyWrap .historyListArea dl .ico img {
+	width:100%;
+}
+.historyWrap .historyListArea dl .date {
+	float: left;
+	text-align: right;
+	font-size:3.8vw;
+	margin-left: 10px;
+}
+.historyWrap .historyListArea dl .detail {
+	display:flex;
+	width:100%;
+}
+.historyWrap .historyListArea dl .detail .name {
+	/*width: 100%;*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight:bold;
+	font-size: 4.8vw;
+}
+.historyWrap .historyListArea dl dt.open .detail .name {
+	text-overflow: visible;
+	white-space: normal;
+	padding: 0 15px 0 0;
+}
+.historyWrap .historyListArea .transitionNumber{
+	color:#B7B7B7;
+	font-size:3.2vw;
+}
+.historyWrap .historyListArea .nanacoText{
+	color:#575757;
+	font-size:3.2vw;
+	padding:3px 0;
+}
+.historyWrap .historyListArea dl .detail .money {
+	white-space: nowrap;
+	font-weight:bold;
+	font-size: 4.8vw;
+	flex: 1;
+	text-align: right;
+}
+.historyWrap .historyListArea dl .point{
+	color:#FF5700;
+	font-weight:bold;
+	font-size:3.8vw;
+}
+.historyWrap .historyListBottomLink {
+	overflow:hidden;
+	margin-top:20px;
+}
+.historyWrap .historyListBottomLink a {
+	color:#34A763;
+	text-decoration:underline;
+	font-size:4.2vw;
+}
+.historyWrap .historyListBottomLink .moreLink {
+	text-align:center;
+}
+
+/*
+利用履歴詳細画面
+*/
+
+.historyDetail .attentionArea {
+	margin: 5px 4% 0;
+}
+.historyDetail .historyDetailTop {
+	background-color: #FFF;
+	padding: 15px 4%;
+}
+.historyDetail .historyDetailBottom {
+	background-color: #FFF;
+	padding: 15px 4%;
+	margin-bottom: -80px;
+}
+
+.historyDetail .historyDetailBottom .detailTop{
+	overflow:hidden;
+	padding-top:10px;
+}
+.historyDetail .historyDetailBottom .ico{
+	float:left;
+	text-align:left;
+}
+.historyDetail .historyDetailBottom .ico.payment {
+	width:42px;
+}
+.historyDetail .historyDetailBottom .ico.charge {
+	width:54px;
+}
+.historyDetail .historyDetailBottom .ico img {
+	width:100%;
+}
+.historyDetail .historyDetailBottom .date {
+	float:right;
+	text-align:right;
+	font-size:3.8vw;
+}
+.historyDetail .historyDetailBottom .detail .name {
+	margin-top:30px;
+	font-weight:bold;
+	font-size: 4.8vw;
+}
+.historyDetail .historyDetailBottom .detail .money {
+	margin-top:15px;
+	white-space: nowrap;
+	font-weight:bold;
+	text-align:right;
+}
+.historyDetail .historyDetailBottom .point{
+	color:#FF5700;
+	font-weight:bold;
+	font-size:3.8vw;
+}
+.historyDetail .historyDetailBottom .pointAttentionText{
+	margin-top:25px;
+	color:#565656;
+	font-size:3.2vw;
+}
+.historyDetail .historyDetailBottom .transitionNumber{
+	margin-top:25px;
+	color:#B7B7B7;
+	font-size:3.2vw;
+}

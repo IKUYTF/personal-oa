@@ -1,0 +1,907 @@
+@charset "utf-8";
+
+/*
+支払
+*/
+.charge,
+.chargeWrap {
+	background-color:#34A763;
+}
+.bgWhite {
+	background-color:#FFFFFF!important;
+}
+.chargeDetailArea {
+	margin: 15px 0 0;
+}
+.chargeDetailArea .titleArea {
+	margin:15px 4% 0;
+}
+.chargeDetailArea .titleArea.chargeScreenTitle {
+	position:relative;
+	margin-bottom: 15px;
+}
+.chargeDetailArea .titleArea.chargeScreenTitle .backButton {
+	top: 22%;
+}
+.chargeDetailArea .titleArea.chargeScreenTitle .titleTxt p{
+	color:#FFF!important;
+	font-size:3.4vw!important;
+	line-height: 1.6;
+}
+.chargeDetailArea .bgGreen {
+	margin-top: 20px ;
+	padding-top: 15px;
+}
+.chargeDetailArea .attentionArea {
+	margin-top: 0!important;
+	margin-bottom: 15px!important;
+}
+.charge header ul{
+	border-bottom:8px solid #34A763;
+}
+.charge header ul li.current {
+	background-color:#34A763;
+	border:none;
+}
+.chargeWrap .importantInfoArea {
+	background-color:#FFF;
+	margin:15px 4% 0;
+	border: 1px solid #E7E7E7;
+	border-radius:3px;
+	padding:10px 4%;
+}
+.chargeWrap .importantInfoArea h2 {
+	font-size:4.2vw;
+	font-weight:bold;
+	color:#FF0000;
+	padding-bottom:5px;
+}
+.chargeWrap .importantInfoArea dl {
+	font-size:3.8vw;
+	display:flex;
+	padding-bottom:8px;
+}
+.chargeWrap .importantInfoArea dl:last-child {
+	padding-bottom:0px;
+}
+.chargeWrap .importantInfoArea dl dt {
+	font-size: 3.8vw;
+	width: 26.5%;
+}
+.chargeWrap .importantInfoArea dl dd {
+	width: 73.5%;
+}
+.chargeWrap .importantInfoArea dl dd a {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.chargeWrap .importantInfoArea dl dd a {
+	color:#269E56;
+	text-decoration:underline;
+}
+
+.chargeWrap .codeArea {
+	background-color:#FFF;
+	margin:15px 4%;
+	border-radius:3px;
+	padding:20px;
+}
+.chargeWrap .codeArea img {
+	width:100%;
+}
+.chargeWrap .codeArea .barCodeArea {
+	max-width:284px;
+	margin:0 auto;
+	position:relative;
+}
+.chargeWrap .codeArea .barCode {
+	width:100%;
+	max-width:284px;
+	margin:0 auto 26px;
+	padding-top: 30px;
+}
+.chargeWrap .codeArea .zoomButton {
+	position:absolute;
+	top:0;
+	right:0;
+	width:26px;
+	overflow:hidden;
+}
+.chargeWrap .codeArea .qrCode {
+	max-width:146px;
+	margin:0 auto 10px;
+}
+.chargeWrap .codeArea .codeRemainingTime {
+	font-size:3.8vw;
+	text-align:center;
+	display: table;
+	width: 100%;
+}
+.chargeWrap .codeArea .codeRemainingTime a {
+	display: inline-block;
+	width:4vw;
+}
+.chargeWrap .codeArea .codeRemainingTime a img {
+	width:100%;
+	vertical-align: middle;
+}
+.chargeWrap .codeArea .codeRemainingTime span {
+	padding-left: 1.5%;
+	vertical-align: middle;
+}
+.chargeWrap p {
+	font-size:3.4vw;
+	text-align:center;
+	color:#FFF;
+	font-weight:bold;
+}
+
+.chargeWrap .codeAreaBig {
+	background-color: #FFF;
+	padding: 20px 0;
+	margin-bottom: -80px;
+	margin-top: -5px;
+}
+.chargeWrap .codeAreaBig .titleArea {
+	margin: 0 4%;
+}
+.chargeWrap .codeAreaBig .changeButton {
+	position:absolute;
+	top:72px;
+	right:4%;
+}
+.chargeWrap .codeAreaBig .changeButton a {
+	display: block;
+	line-height: 115%;
+	padding: 10px 0.5vw;
+	background: #34A763;
+	border-radius: 10px;
+	width: 17vw;
+	text-align: center;
+	color: #FFF;
+	font-weight: bold;
+	font-size:3vw;
+}
+.chargeWrap .codeAreaBig .barCodeBig {
+	width: 100%;
+	max-width: 127px;
+	height: 381px;
+	margin: 40px auto 77px;
+	position:relative;
+}
+.chargeWrap .codeAreaBig .barCodeBig>img {
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	width: 381px;
+	position: absolute;
+	top: 147px;
+	right: -106px;
+}
+.chargeWrap .codeAreaBig .barCodeBig .codeRemainingTime {
+	font-size: 3.8vw;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	position:absolute;
+	top:50%;
+	right:-44%;
+	z-index:0;
+	text-align: center;
+	display: table;
+	width:100%;
+}
+.chargeWrap .codeAreaBig .codeRemainingTime a {
+	display: inline-block;
+	width: 4vw;
+}
+.chargeWrap .codeAreaBig .codeRemainingTime a img {
+	width: 100%;
+	vertical-align: middle;
+}
+.chargeWrap .codeAreaBig .codeRemainingTime span {
+	padding-left: 5%;
+	vertical-align: middle;
+}
+.chargeWrap .codeAreaBig .qrCodeBig {
+	max-width: 220px;
+	margin: 0 auto 80px;
+}
+.chargeWrap .codeAreaBig .qrCodeBig img {
+	width: 100%;
+}
+.chargeWrap .codeAreaBig .barCodeNumber {
+	position:relative;
+	width: 40%;
+	margin: 55px auto 0;
+}
+.chargeWrap .codeAreaBig .barCodeNumber p {
+	font-size:12.6vw;
+	color:#000;
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+.chargeWrap .codeAreaBig .barCodeNumber .codeRemainingTime {
+	font-size: 3.8vw;
+	position:absolute;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	top:30%;
+	right:-63%;
+	z-index:0;
+	display: table;
+	width:100%;
+}
+.chargeWrap .chargeSelectArea .chargeSelectTitle {
+	text-align:center;
+	border-radius: 3px;
+}
+.chargeWrap .chargeSelectArea .chargeSelectTitle p{
+	color:#282828;
+	font-size:4.2vw;
+	padding:0 0 15px;
+}
+.chargeWrap .atmChargeArea,
+.chargeWrap .nanacoChargeArea {
+	background-color: #FFF;
+	padding: 20px 0;
+	margin-bottom:-80px;
+	margin-top: -5px;
+}
+.chargeWrap .atmChargeArea .titleArea,
+.chargeWrap .nanacoChargeArea .titleArea {
+	margin: 0 4%;
+}
+.chargeWrap .atmChargeArea p {
+	color: #000;
+}
+.chargeWrap .atmChargeArea .atmChargeMethod,
+.chargeWrap .nanacoChargeArea .nanacoChargeMethod,
+.chargeWrap .nanacoChargeArea .nanacoChargePoint {
+	display: flex;
+	margin: 40px 4%;
+	border-bottom:1px solid #B7B7B7;
+	padding-bottom:5px;
+}
+.chargeWrap .nanacoChargeArea .nanacoUsePoint {
+	display: flex;
+	margin: 30px 4% 10px;
+	padding-bottom:5px;
+}
+.chargeWrap .nanacoChargeArea .tabWrap {
+	margin:40px 4% 0;
+}
+.chargeWrap .nanacoChargeArea .tabHead {
+	display: flex;
+	width:100%;
+}
+.chargeWrap .nanacoChargeArea .tabHead label {
+	flex: 1;
+	background-color:#F3F1F2;
+	margin-right:2%;
+}
+.chargeWrap .nanacoChargeArea .tabHead label:nth-child(2) {
+	margin-right:0;
+}
+.chargeWrap .nanacoChargeArea .tabHead label.on {
+	background-color:#FFE9DB;
+}
+.chargeWrap .nanacoChargeArea .tabHead label span {
+	font-size:3.4vw;
+	display:block;
+	color:#000;
+	padding:4% 0 4% 19%;
+	font-weight:normal;
+	text-align:left;
+	background-image:url(../images/charge/ico_radio_off.png);
+	background-position:5% center;
+	background-size:16px 16px;
+	background-repeat:no-repeat;
+}
+.chargeWrap .nanacoChargeArea .tabHead label.on span {
+	background-image:url(../images/charge/ico_radio_on.png);
+	background-position:5% center;
+	background-size:16px 16px;
+	background-repeat:no-repeat;
+}
+.chargeWrap .nanacoChargeArea .tabHead label input {
+	display:none;
+}
+.chargeWrap .nanacoChargeArea .allTabBody {
+	display:none;
+}
+.chargeWrap .nanacoChargeArea .nanacoChargePoint {
+	margin: 40px 4% 10px;
+}
+.chargeWrap .atmChargeArea .atmChargeMethod dt,
+.chargeWrap .nanacoChargeArea .nanacoChargeMethod dt,
+.chargeWrap .nanacoChargeArea .nanacoChargePoint dt {
+	color: #656565;
+	font-size: 3.8vw;
+	line-height: 25px;
+}
+.chargeWrap .nanacoChargeArea .nanacoUsePoint dt {
+	color: #656565;
+	font-size: 3.8vw;
+	padding-top: 16px;
+}
+.chargeWrap .nanacoChargeArea .nanacoChargePoint dt {
+	padding-top: 13px;
+}
+.chargeWrap .atmChargeArea .atmChargeMethod dd,
+.chargeWrap .nanacoChargeArea .nanacoChargeMethod dd {
+	flex: 1;
+	font-size: 4.2vw;
+	text-align: right;
+}
+.chargeWrap .nanacoChargeArea .nanacoChargePoint dd {
+	flex: 1;
+	text-align: right;
+	font-size:6.4vw;
+}
+.chargeWrap .nanacoChargeArea .nanacoUsePoint dd {
+	flex: 1;
+	text-align: right;
+	font-weight:normal;
+}
+.chargeWrap .nanacoChargeArea p.nanacoChargeTextS {
+	font-size: 3.2vw;
+	color: #656565;
+	font-weight: normal ;
+	text-align:left;
+	margin:0 4% 0;
+}
+.chargeWrap .nanacoChargeArea p.errorText {
+	font-size: 3.2vw;
+	color: #FF0000;
+	font-weight: normal;
+	text-align:left;
+	margin:0 4%;
+}
+.chargeWrap .atmChargeArea .atmChargeText {
+	font-size:4.8vw;
+	color:#656565;
+	line-height:1em;
+	font-weight:normal;
+}
+.chargeWrap .atmChargeArea .atmChargeText span {
+	font-size:3.2vw;
+	color:#656565;
+}
+.chargeWrap .atmChargeArea .atmChargeInput {
+	margin:10px 0;
+	text-align:center;
+}
+.chargeWrap .atmChargeArea .atmChargeInput p {
+	font-size:5.2vw;
+}
+.chargeWrap .atmChargeArea .atmChargeAttention {
+	font-size:3.2vw;
+	color:#FF0000;
+	font-weight:normal;
+	margin-bottom:10px;
+}
+.chargeWrap .atmChargeArea .atmChargeButton,
+.chargeWrap .nanacoChargeArea .nanacoChargeButton {
+	margin:40px 4% 0;
+	text-align: center;
+}
+.chargeWrap .atmChargeArea .atmChargeButton button,
+.chargeWrap .nanacoChargeArea .nanacoChargeButton button{
+	background-color: #E7E7E7;
+	pointer-events: none;
+	padding: 12px;
+	margin: 0 auto;
+	width: 100%;
+	color:#FFF;
+}
+.chargeWrap .atmChargeArea .atmChargeButton.on button,
+.chargeWrap .nanacoChargeArea .nanacoChargeButton.on button{
+	background-color: #34A862;
+	pointer-events: auto;
+}
+
+.chargeWrap .atmChargeArea input[type="tel"] {
+	border-radius: 0;
+	-webkit-box-sizing: content-box;
+	-webkit-appearance: button;
+	appearance: button;
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.chargeWrap .atmChargeArea input[type="tel"]{
+	text-align: right;
+	font-size: 5.2vw;
+	background: #F3F1F1;
+	font-weight: bold;
+	width: 170px;
+	height: 50px;
+	margin: 0 10px;
+	padding: 0 10px;
+}
+.chargeWrap .nanacoChargeArea input[type="tel"] {
+	border-radius: 0;
+	-webkit-box-sizing: content-box;
+	-webkit-appearance: button;
+	appearance: button;
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.chargeWrap .nanacoChargeArea input[type="tel"] {
+    text-align: right;
+    font-size: 5.2vw;
+    background: #F3F1F1;
+    font-weight: normal;
+    width: 66%;
+    height: 50px;
+    margin: 0 10px;
+    padding: 0 10px;
+}
+.chargeWrap .atmChargeArea input[type="tel"]::-webkit-search-decoration {
+	display: none;
+}
+
+.chargeWrap .atmNumberArea {
+	position: relative;
+	margin: 15px 0 0;
+	text-align:center;
+}
+.chargeWrap .atmNumberArea .titleArea {
+	margin: 0 4%;
+}
+.chargeWrap .atmNumberArea p.atmAreatxt {
+	font-size: 4.2vw;
+	font-weight:normal;
+	color:#656565;
+}
+.chargeWrap .atmNumberArea p.atmNumber {
+	font-size: 16.5vw;
+	font-weight:normal;
+	color:#282828;
+	padding: 20px 0;
+}
+.chargeWrap .atmDescriptionArea {
+	display: flex;
+	margin: 60px 4% 0;
+}
+.chargeWrap .atmDescriptionArea .imgArea {
+	width:70%;
+}
+.chargeWrap .atmDescriptionArea .imgArea img {
+	width:100%;
+}
+.chargeWrap .atmDescriptionArea .imgArea img:nth-child(1) {
+	padding-bottom:20px;
+}
+.chargeWrap .atmDescriptionArea .txtArea p{
+	color:#656565;
+	font-weight:normal;
+	text-align:left;
+	padding-left:15px;
+}
+.chargeWrap .chargeEnd {
+	padding-top: 30px;
+}
+.chargeWrap .chargeEnd h1 {
+	width: 56%;
+	height: 56vw;
+	margin: 0 auto;
+	background-image:url(../images/charge/bg_circle.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+	background-size:100% auto;
+}
+.chargeWrap .chargeEnd h1 span {
+	text-align: center;
+	font-size: 5.6vw;
+	color: #34A862;
+	font-weight: bold;
+	line-height: 10vw;
+	padding-top: 18vw;
+	display: block;
+}
+.chargeWrap .chargeEnd .chargeMethod {
+	display:flex;
+	margin:40px 4% 0;
+	border-bottom:1px solid #B7B7B7;
+	padding-bottom:5px;
+}
+.chargeWrap .chargeEnd .chargeMethod dt {
+	color:#656565;
+	font-size:3.8vw;
+	line-height: 25px;
+}
+.chargeWrap .chargeEnd .chargeMethod dd {
+	flex:1;
+	font-size:4.2vw;
+	text-align:right;
+}
+.chargeWrap .chargeEnd .chargeBalance {
+	display:flex;
+	margin:40px 4% 0;
+	font-size:3.8vw;
+}
+.chargeWrap .chargeEnd .chargeBalance dt {
+	font-weight:bold;
+	font-size:3.8vw;
+}
+.chargeWrap .chargeEnd .chargeBalance dd {
+	flex:1;
+	text-align:right;
+	font-size:5.8vw;
+	line-height: 2em;
+}
+.chargeWrap .chargeEnd .chargeBalance dd span {
+	font-size:11.5vw;
+}
+.chargeWrap .chargeEndButton {
+	margin:50px 0 0;
+}
+.chargeWrap .chargeEndButton a {
+	background-color:#34A862;
+	color:#FFF;
+}
+
+.chargeWrap .cardChargePasswordArea {
+	background-color: #FFF;
+	padding: 20px 0;
+	margin-bottom:-80px;
+	margin-top: -5px;
+}
+.chargeWrap .cardChargePasswordArea p {
+	color:#282828;
+}
+.chargeWrap .cardChargePasswordArea .titleArea {
+	margin:0 4%;
+}
+.chargeWrap .cardChargePasswordArea .cardChargePasswordText {
+	margin:15px 4% 0;
+	text-align:left;
+	font-size:4.6vw;
+	font-weight:normal;
+}
+.chargeWrap .cardChargePasswordArea .cardChargePasswordInput {
+	margin:30px 4% 40px;
+}
+.chargeWrap .cardChargePasswordArea .cardChargePasswordInput .passwordText {
+	text-align:left;
+	font-size:4.0vw;
+	font-weight:normal;
+}
+.chargeWrap .cardChargePasswordArea .cardChargePasswordInput .passwordInput {
+	margin:2px 0;
+}
+.chargeWrap .cardChargePasswordArea input[type="password"] {
+	border-radius: 0;
+	-webkit-box-sizing: content-box;
+	-webkit-appearance: button;
+	appearance: button;
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.chargeWrap .cardChargePasswordArea input[type="password"]{
+	text-align: left;
+	font-size: 4.0vw;
+	background: #F3F1F1;
+	width:100%;
+	padding: 10px;
+}
+.chargeWrap .cardChargePasswordArea input[type="password"]::-webkit-search-decoration {
+	display: none;
+}
+.chargeWrap .cardChargePasswordArea .cardChargePasswordInput .passwordAttention {
+	text-align:left;
+	font-size:3.2vw;
+	font-weight:normal;
+	color:#FF0000;
+}
+.chargeWrap .cardChargePasswordArea .cardChargePasswordButton {
+	margin:0 4% 20px;
+	text-align: center;
+}
+.chargeWrap .cardChargePasswordArea .cardChargePasswordButton button{
+	background-color: #E7E7E7;
+	pointer-events: none;
+	padding: 12px;
+	margin: 0 auto;
+	width: 100%;
+	color:#FFF;
+}
+.chargeWrap .cardChargePasswordArea .cardChargePasswordButton.on button{
+	background-color: #34A862;
+	pointer-events: auto;
+}
+.chargeWrap .cardChargePasswordArea .cardChargePasswordLink a {
+	font-size:3.8vw;
+	font-weight:normal;
+	color:#FF5700;
+	text-decoration:underline;
+}
+
+.chargeWrap .cardChargeArea {
+	background-color: #FFF;
+	padding: 20px 0;
+	margin-bottom: -80px;
+	margin-top: -5px;
+}
+.chargeWrap .cardChargeArea p{
+	color:#000;
+}
+.chargeWrap .cardChargeArea .titleArea{
+	margin: 0 4%;
+}
+.chargeWrap .cardChargeArea .cardAddDeleteButton {
+	position: absolute;
+	top: 72px;
+	right: 4%;
+}
+.chargeWrap .cardChargeArea .cardAddDeleteButton a {
+	display: block;
+	padding: 10px 0.5vw;
+	line-height: 115%;
+	background: #34A763;
+	border-radius: 10px;
+	width: 17vw;
+	text-align: center;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 3vw;
+}
+.chargeWrap .cardChargeArea .cardChargeMethod {
+	display: flex;
+	margin: 20px 4% 15px;
+	border-bottom: 1px solid #B7B7B7;
+	padding-bottom: 5px;
+}
+.chargeWrap .cardChargeArea .cardChargeMethod dt {
+	color: #656565;
+	font-size: 3.8vw;
+	line-height: 25px;
+}
+.chargeWrap .cardChargeArea .cardChargeMethod dd {
+	flex: 1;
+	font-size: 4.2vw;
+	text-align: right;
+}
+.chargeWrap .cardChargeArea .cardSelectArea {
+	margin: 0 4%;
+	border-bottom: 1px solid #B7B7B7;
+	padding: 0px 0 15px;
+}
+.chargeWrap .cardChargeArea .cardSelectArea .noCardText {
+	font-size: 4.2vw;
+	color:#282828;
+	font-weight:normal;
+}
+.chargeWrap .cardChargeArea .cardSelectOther {
+	display: none;
+}
+.chargeWrap .cardChargeArea .cardSelectOther li {
+	height: 13.1vw;
+}
+.chargeWrap .cardChargeArea .cardSelectOther input {
+	display: none;
+}
+
+.chargeWrap .cardChargeArea .cardSelectFirst input,
+.chargeWrap .cardChargeArea .cardSelectOther input {
+	display: none;
+}
+.chargeWrap .cardChargeArea .cardSelectFirst .cardSelectBox,
+.chargeWrap .cardChargeArea .cardSelectOther .cardSelectBox {
+	font-size: 3.4vw;
+	display:block;
+	color: #000;
+	padding: 3% 5% 3% 14%;
+	font-weight: normal;
+	text-align: left;
+	background-image: url(../images/charge/ico_radio_off.png);
+	background-position: 5% center;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	overflow:hidden;
+	display: flex;
+	align-items: center;
+}
+.chargeWrap .cardChargeArea .cardSelectFirst input[type="radio"]:checked+.cardSelectBox ,
+.chargeWrap .cardChargeArea .cardSelectOther input[type="radio"]:checked+.cardSelectBox {
+	background-image: url(../images/charge/ico_radio_on.png);
+	background-color:#FFE9DA;
+}
+.chargeWrap .cardChargeArea .cardSelectFirst .cardSelectBox img ,
+.chargeWrap .cardChargeArea .cardSelectOther .cardSelectBox img {
+	width:10vw;
+	float: left;
+	padding-right: 5%;
+}
+.chargeWrap .cardChargeArea .cardSelectFirst .cardSelectBox span.text ,
+.chargeWrap .cardChargeArea .cardSelectOther .cardSelectBox span.text {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size:4.0vw;
+	line-height:1em;
+	font-weight: bold;
+	display: block;
+}
+.chargeWrap .cardChargeArea .cardSelectFirst .cardSelectBox span.text span ,
+.chargeWrap .cardChargeArea .cardSelectOther .cardSelectBox span.text span {
+	font-weight:normal;
+}
+.chargeWrap .cardChargeArea .cardSelectOther li.unavailableCard {
+	background: #E7E7E7;
+	pointer-events:none;
+	height:22vw;
+}
+.chargeWrap .cardChargeArea .cardSelectOther li.unavailableCard .cardSelectBox {
+	background-image: url(../images/charge/ico_radio_none.png);
+}
+
+.chargeWrap .cardChargeArea .cardSelectOther .cardSelectBox .unavailableCardText {
+	background: url(../images/common/ico_unavailablecard.png) no-repeat left center;
+	background-size: 3.6vw;
+	padding-left: 4.2vw;
+	font-size: 3.2vw;
+}
+.chargeWrap .cardChargeArea .arrowButton {
+	background-image:url(../images/common/bg_close.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:100% auto;
+	width: 54px;
+	line-height: 54px;
+	height: 54px;
+	margin: -16px auto 0;
+	text-align: center;
+	opacity: 0.75;
+}
+.chargeWrap .cardChargeArea .arrowButton img {
+	padding-top: 22px;
+	width: 19px;
+}
+.chargeWrap .cardChargeArea .cardChargeSumMethod {
+	display: flex;
+	margin: -15px 4% 5px;
+	border-bottom: 1px solid #B7B7B7;
+}
+.chargeWrap .cardChargeArea .cardChargeSumMethod dt {
+	color: #656565;
+	font-size: 3.8vw;
+	padding-top: 30px;
+}
+.chargeWrap .cardChargeArea .cardChargeSumMethod dd {
+	flex: 1;
+	font-size: 5.8vw;
+	text-align: right;
+}
+.chargeWrap .cardChargeArea .cardChargeSumMethod dd span {
+	font-size: 13.3vw;
+	padding-left: 7%;
+}
+.chargeWrap .cardChargeArea .cardChargeSumSelect p{
+	font-size:4.2vw;
+	color:#656565;
+	font-weight:normal;
+}
+.chargeWrap .cardChargeArea .cardChargeSumSelect ul{
+	margin:5px 4% 10px;
+	display: flex;
+}
+.chargeWrap .cardChargeArea .cardChargeSumSelect li{
+	color: #34A763;
+	font-size: 3.8vw;
+	border: 1px solid #34A763;
+	border-radius: 10px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	margin: 0px 6px;
+	padding: 12px 0;
+	flex: 1;
+	line-height: 100%;
+}
+.chargeWrap .cardChargeArea .cardChargeSumSelect li.on{
+	background: #34A763;
+	color:#FFF;
+}
+.chargeWrap .cardChargeArea .cardChargeSumSelect li:first-child{
+	margin-left:0;
+}
+.chargeWrap .cardChargeArea .cardChargeSumSelect li:last-child{
+	margin-right:0;
+}
+.chargeWrap .cardChargeArea .cardChargeSumSelect li span span{
+	font-size: 2.8vw;
+}
+.chargeWrap .cardChargeArea .cardChargeSumSelect li input{
+	display:none;
+}
+.chargeWrap .atmChargeStep {
+	margin: 20px 4% ;
+	border: 1px solid #D0D0D0;
+	border-radius: 4px;
+	padding:0 4%;
+}
+.chargeWrap .atmChargeStep p.ttl{
+	font-size: 4.4vw;
+	color: #34A763;
+	padding-bottom: 4%;
+	line-height: 1em;
+}
+.chargeWrap .atmChargeStep p{
+	font-size: 3.2vw;
+	color: #656565;
+	line-height: 1.8em;
+	font-weight: normal;
+}
+.chargeWrap .atmChargeStep ul li {
+	padding-top:5%;
+	padding-bottom:5%;
+}
+.chargeWrap .atmChargeStep ul li:first-child {
+	border-bottom: 1px dotted #D0D0D0;
+}
+.chargeWrap .wideButtonDefault.cardChargeButton{
+	margin: 0 4%;
+}
+.chargeWrap .wideButtonDefault button{
+	background-color: #E7E7E7;
+	pointer-events: none;
+	padding: 12px;
+	margin: 0 auto;
+	width: 100%;
+	color: #FFF;
+}
+.chargeWrap .wideButtonDefault.on button{
+	background-color: #34A862;
+	pointer-events: auto;
+}
+.otherSumList{
+	display:none;
+	position:fixed;
+	bottom:0;
+	background:#F9F7F7;
+	z-index: 999;
+	width:100%;
+	height:100%;
+	overflow-y:scroll!important;
+}
+.otherSumList .titleArea {
+	margin:15px 4%;
+}
+.otherSumList .titleArea .backButton {
+	position:absolute;
+	width: 11px;
+	top:22px;
+}
+.otherSumList .backButton img {
+	width: 100%;
+}
+.otherSumList p {
+	text-align: center;
+	font-size:5.2vw;
+}
+.otherSumList ul {
+	background:#FFF;
+}
+.otherSumList ul input {
+	display:none;
+}
+.otherSumList ul span {
+	display:block;
+	padding:15px;
+	font-size:4.2vw;
+	border-bottom:2px solid #F9F7F7;
+}
+.otherSumList ul input[type="radio"]:checked+span {
+	background:#FFE9DA;
+}

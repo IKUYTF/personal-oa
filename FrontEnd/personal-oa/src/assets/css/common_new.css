@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+.wideButtonDefault {
+    margin:0 4%;
+}
+.wideButtonDefault a ,
+.wideButtonDefault button {
+    display:block;
+    font-size:4.8vw;
+    margin:0 auto;
+    text-align:center;
+    padding:12px 0;
+    font-weight:bold;
+    border-radius:10px;
+    width:100%;
+}
+.titleArea .backButton {
+    position: absolute;
+    width: 11px;
+}
+.titleArea .backButton img {
+    width:100%;
+}
+.titleArea .titleTxt {
+    text-align: center;
+    padding-right: 30px;
+}
+.titleArea .titleTxt p {
+    font-size: 16px!important;
+    color:#282828!important;
+    line-height: 1.2;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.attentionArea{
+    border:1px solid #FF0000;
+    padding:15px 4%;
+    margin:20px 4% 0;
+    background:#FFF;
+}
+.attentionArea p{
+    color:#FF0000!important;
+    text-align:left!important;
+    font-size:4.2vw!important;
+    font-weight: bold;
+}
+.inputArea {
+    position: relative;
+}
+.inputArea p.viewPw {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    color: #888;
+    cursor: pointer;
+    width: 20px;
+    padding: 10px;
+}
+.inputArea p.viewPw img {
+    width: 100%;
+}
+.inputArea input {
+    width: 100%;
+    border: none;
+    background: #F3F1F2;
+    font-size: 4.0vw;
+    padding: 10px 30px 10px 10px;
+    box-sizing: border-box;
+    margin: 2px 0;
+    line-height: 1;
+    border-radius:0;
+}
+.chargeSelectArea {
+    background-color: #FFF;
+    margin: 15px 4% 0;
+    border-radius: 3px;
+}
+.chargeSelectArea ul li {
+    border-top: 1px solid #E8E8E8;
+}
+.chargeSelectArea ul li:last-child {
+    border-bottom: 1px solid #E8E8E8;
+}
+.chargeSelectArea ul li.creditCard {
+    background: url(../images/common/ico_arrow.png) no-repeat right center,url(../images/common/ico_creditcard.png) no-repeat left center;
+    background-size:7px,24px;
+}
+.chargeSelectArea ul li.cashCard {
+    background: url(../images/common/ico_arrow.png) no-repeat right center,url(../images/common/ico_cashcard.png) no-repeat left center;
+    background-size:7px,24px;
+}
+.chargeSelectArea ul li.sevenAtm {
+    background: url(../images/common/ico_arrow.png) no-repeat right center,url(../images/common/ico_7atm.png) no-repeat left center;
+    background-size:7px,24px;
+}
+.chargeSelectArea ul li.nanacoPoint {
+    background: url(../images/common/ico_arrow.png) no-repeat right center,url(../images/common/ico_nanaco.png) no-repeat left center;
+    background-size:7px,24px;
+}
+.chargeSelectArea ul li.registerCharge {
+    background: url(../images/common/ico_arrow.png) no-repeat right center,url(../images/common/ico_register.png) no-repeat left center;
+    background-size:7px,24px;
+}
+.chargeSelectArea ul li a{
+    display:block;
+    padding: 15px 35px;
+}

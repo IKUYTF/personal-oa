@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+.paymentWrap {
+	height: 597px;
+}
+
+
+.paymentWrap .mainTxt {
+	padding-top:15px;
+}
+
+.paymentWrap .mainTxt1 {
+	padding-top:15px;
+	font-size: 16px !important
+}
+.paymentWrap .mainTxt2 {
+    padding-top:15px;
+    font-size: 16px !important;
+    color: black;
+}
+
+
+.paymentWrap .codeArea {
+	background-color:#FFF;
+	margin:15px 4%;
+	border-radius:3px;
+	padding:20px;
+}
+.paymentWrap .codeArea img {
+	width:100%;
+}
+.paymentWrap .codeArea .barCodeArea {
+	max-width:284px;
+	margin:0 auto;
+	position:relative;
+}
+.paymentWrap .codeArea .barCode {
+	width:100%;
+	max-width:284px;
+	margin:0 auto 26px;
+	padding-top: 30px;
+}
+.paymentWrap .codeArea .zoomButton {
+	position:absolute;
+	top:-6px;
+	right:1px;
+	width:25px;
+	overflow:hidden;
+}
+.paymentWrap .codeArea .qrCode {
+	max-width:146px;
+	margin:0 auto 10px;
+}
+.paymentWrap .codeArea .codeRemainingTime {
+	text-align:center;
+	display: table;
+	width: 100%;
+}
+.paymentWrap .codeArea .codeRemainingTime a {
+	display: inline-block;
+	width:4vw;
+}
+.paymentWrap .codeArea .codeRemainingTime a img {
+	width:100%;
+	vertical-align: middle;
+}
+.paymentWrap .codeArea .codeRemainingTime span {
+	padding: 0 10px 0 0;
+	vertical-align: middle;
+	font-size: 14px;
+	color: black;
+}
+.paymentWrap p {
+	font-size:3.4vw;
+	text-align:center;
+	color:#FFF;
+	font-weight:bold;
+}
+
+.paymentWrap .codeAreaBig {
+	background-color: #FFF;
+	padding: 20px 0;
+	margin-bottom: -80px;
+	margin-top: 10px;
+	position:relative;
+}
+.paymentWrap .codeAreaBig .titleArea {
+	margin: 0 4%;
+}
+.paymentWrap .codeAreaBig .changeButton {
+	position:absolute;
+	top:8px;
+	right:4%;
+}
+.paymentWrap .codeAreaBig .changeButton a {
+	display: block;
+	line-height: 115%;
+	padding: 10px 0.5vw;
+	background: #FF7200;
+	border-radius: 10px;
+	width: 17vw;
+	text-align: center;
+	color: #FFF;
+	font-weight: bold;
+	font-size:3vw;
+}
+.paymentWrap .codeAreaBig .barCodeBig {
+	width: 100%;
+	max-width: 127px;
+	height:381px;
+	margin: 40px auto 77px;
+	position:relative;
+}
+.paymentWrap .codeAreaBig .barCodeBig>img {
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	width: 381px;
+	position: absolute;
+	top: 147px;
+	right: -106px;
+}
+.paymentWrap .codeAreaBig .barCodeBig .codeRemainingTime {
+	font-size: 3.8vw;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	position:absolute;
+	top:50%;
+	right:-44%;
+	z-index:0;
+	text-align: center;
+	display: table;
+	width:100%;
+}
+.paymentWrap .codeAreaBig .codeRemainingTime a {
+	display: inline-block;
+	width: 4vw;
+}
+.paymentWrap .codeAreaBig .codeRemainingTime a img {
+	width: 100%;
+	vertical-align: middle;
+}
+.paymentWrap .codeAreaBig .codeRemainingTime span {
+    padding: 0 10px 0 0;
+    vertical-align: middle;
+    font-size: 14px;
+    color: black;
+}
+.paymentWrap .codeAreaBig .qrCodeBig {
+	max-width: 220px;
+	margin: 0 auto 80px;
+}
+.paymentWrap .codeAreaBig .qrCodeBig img {
+	width: 100%;
+}
+.paymentWrap .codeAreaBig .barCodeNumber {
+	position:relative;
+	width: 40%;
+	margin: 55px auto 0;
+}
+.paymentWrap .codeAreaBig .barCodeNumber p {
+	font-size:50px!important;
+	color:#000;
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+.paymentWrap .codeAreaBig .barCodeNumber .codeRemainingTime {
+	font-size: 3.8vw;
+	position:absolute;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	top:30%;
+	right:-63%;
+	z-index:0;
+	display: table;
+	width:100%;
+}
+
+
+/*ポップアップ*/
+.paymentWrap .modal-bg {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 11;
+}
+.paymentWrap .overlayButtunArea {
+	width: 90%;
+	margin: 0 0 0 -45%;
+	padding: 0;
+	background-color: #ffffff;
+	color: #666666;
+	position: fixed;
+	z-index: 12;
+	top:36%;
+	left:50%;
+}
+.paymentWrap .overlayButtunArea .overlayButtunInner {
+	padding: 4% 4% 8%;
+}
+.paymentWrap .overlayButtunArea .overlayButtunInner .popTextTitle {
+	text-align: center;
+	font-weight: bold;
+	font-size: 5.2vw;
+	padding: 15px 0 10px 0;
+	color:#000;
+}
+.paymentWrap .overlayButtunArea .overlayButtunInner .popTextDetail {
+	text-align: center;
+	font-weight: normal;
+	font-size: 3.8vw;
+	padding: 0 0 20px;
+	color: #000;
+	font-weight: bold;
+}
+.paymentWrap .overlayButtunArea .overlayButtunInner div a {
+	display:block;
+	background-color: #34A862;
+	padding: 12px 0;
+	margin: 0 auto;
+	width: 100%;
+	color: #FFF;
+	font-weight: bold;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 4.8vw;
+}
+

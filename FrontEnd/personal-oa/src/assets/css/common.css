@@ -1,0 +1,283 @@
+@charset "utf-8";
+/*----------------------
+【概要】共通スタイルの設定
+	-要素
+	-共通パーツ
+----------------------*/
+/*----------------------
+
+*要素
+
+----------------------*/
+
+button, input, textarea {
+	font-family:Verdana, Roboto, "Droid Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", -apple-system, BlinkMacSystemFont, "Yu Gothic", YuGothic, "メイリオ", Meiryo, sans-serif;
+}
+button:focus, input:focus, textarea:focus, select:focus {
+	outline-offset: -2px;
+	outline:0;
+}
+img {
+	font-size: 0;
+	line-height: 0;
+}
+h1 {
+	margin-block-start:0;
+	margin-block-end:0;
+}
+/*----------------------
+
+*共通パーツ
+
+----------------------*/
+.outLoading {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.75);
+	z-index: 9999;
+}
+.outLoading .loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 100px;
+	height: 100px;
+	margin-left: -50px;
+	margin-top: -50px;
+	border-radius: 10px;
+}
+/*金額のフォント指定*/
+body .moneyNumTxt {
+
+}
+.wrap {
+	width: 100%;
+	padding:70px 0 20px;
+}
+.wrap.closeWrap {
+	padding-bottom:80px!important;
+}
+
+header {
+	background-color:#FFFFFF;
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	z-index:10;
+}
+header .headTop{
+	position: relative;
+}
+header .headTop .closeButton {
+	position: absolute;
+	top: 5px;
+	left: 15px;
+}
+.closeButton img {
+	width:17px;
+}
+header .headTop .hLogo {
+	width:61px;
+	margin:10px auto ;
+	padding: 0 0;
+}
+header .headTop .hLogo img {
+	width:100%;
+}
+header ul {
+	background-color:#FFF;
+	display:flex;
+	width: 100%;
+}
+header ul li {
+	background-repeat:no-repeat;
+	background-position:center 9px;
+	width:25%;
+	border-radius:10px 10px 0 0;
+	text-align:center;
+	box-sizing: border-box;
+	margin-right: 2px;
+}
+header ul li a {
+	box-sizing: border-box;
+	border-radius:10px 10px 0 0;
+	border:1px solid #E7E7E7;
+	border-bottom:none;
+}
+header ul li.current a {
+	border: none;
+}
+header ul li:last-child {
+	margin-right: 0;
+}
+header ul li a{
+	display:block;
+	height: 55px;
+}
+header ul li:nth-child(1) {
+	background-image:url(../images/common/ico_payment.png);
+	background-size:36px auto;
+	color:#FFF;
+}
+header ul li:nth-child(2) {
+	background-image:url(../images/common/ico_charge.png);
+	background-size:47px auto;
+}
+header ul li:nth-child(3) {
+	background-image:url(../images/common/ico_history.png);
+	background-size:60px auto;
+}
+header ul li:nth-child(4) {
+	background-image:url(../images/common/ico_menu.png);
+	background-size:47px auto;
+}
+header ul li.current:nth-child(1) {
+	background-image:url(../images/common/ico_payment_current.png);
+}
+header ul li.current:nth-child(2) {
+	background-image:url(../images/common/ico_charge_current.png);
+}
+header ul li.current:nth-child(3) {
+	background-image:url(../images/common/ico_history_current.png);
+}
+header ul li.current:nth-child(4) {
+	background-image:url(../images/common/ico_menu_current.png);
+}
+footer {
+	position: fixed;
+	left: 50%;
+	bottom: 15px;
+	width: 54px;
+	margin-left: -27px;
+}
+footer .closeButton a{
+	display:block;
+	width:54px;
+	line-height:54px;
+	height:54px;
+	margin:0 auto;
+	text-align:center;
+	opacity:0.75;
+	background-image:url(../images/common/bg_close.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:100% auto;
+}
+footer .closeButton img{
+	padding-top: 18px;
+}
+.wideButtonDefault {
+	margin:0 4%;
+}
+.wideButtonDefault a ,
+.wideButtonDefault button {
+	display:block;
+	font-size:4.8vw;
+	margin:0 auto;
+	text-align:center;
+	padding:12px 0;
+	font-weight:bold;
+	border-radius:10px;
+	width:100%;
+}
+button{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	appearance: none;
+}
+.titleArea .backButton {
+	position: absolute;
+	width: 11px;
+}
+.titleArea .backButton img {
+	width:100%;
+}
+.titleArea .titleTxt {
+	text-align: center;
+}
+.titleArea .titleTxt p {
+	font-size: 4.2vw!important;
+	color:#282828!important;
+	line-height: 1.2;
+	font-weight: bold;
+}
+.attentionArea{
+	border:1px solid #FF0000;
+	padding:15px 4%;
+	margin:20px 4% 0;
+	background:#FFF;
+}
+.attentionArea p{
+	color:#FF0000!important;
+	text-align:left!important;
+	font-size:4.2vw!important;
+	font-weight: bold;
+}
+.inputArea {
+	position: relative;
+}
+.inputArea p.viewPw {
+	position: absolute;
+	right: 0;
+	top: 3px;
+	color: #888;
+	cursor: pointer;
+	width: 20px;
+	padding: 10px;
+}
+.inputArea p.viewPw img {
+	width: 100%;
+}
+.inputArea input {
+	width: 100%;
+	border: none;
+	background: #F3F1F2;
+	font-size: 4.0vw;
+	padding: 10px 30px 10px 10px;
+	box-sizing: border-box;
+	margin: 2px 0;
+	line-height: 1;
+	border-radius:0;
+}
+.chargeSelectArea {
+	background-color: #FFF;
+	margin: 15px 4% 0;
+	border-radius: 3px;
+}
+.chargeSelectArea ul li {
+	border-top: 1px solid #E8E8E8;
+}
+.chargeSelectArea ul li:last-child {
+	border-bottom: 1px solid #E8E8E8;
+}
+.chargeSelectArea ul li.creditCard {
+	background: url(../images/common/ico_arrow.png) no-repeat right center,url(../images/common/ico_creditcard.png) no-repeat left center;
+	background-size:7px,24px;
+}
+.chargeSelectArea ul li.cashCard {
+	background: url(../images/common/ico_arrow.png) no-repeat right center,url(../images/common/ico_cashcard.png) no-repeat left center;
+	background-size:7px,24px;
+}
+.chargeSelectArea ul li.sevenAtm {
+	background: url(../images/common/ico_arrow.png) no-repeat right center,url(../images/common/ico_7atm.png) no-repeat left center;
+	background-size:7px,24px;
+}
+.chargeSelectArea ul li.nanacoPoint {
+	background: url(../images/common/ico_arrow.png) no-repeat right center,url(../images/common/ico_nanaco.png) no-repeat left center;
+	background-size:7px,24px;
+}
+.chargeSelectArea ul li.registerCharge {
+	background: url(../images/common/ico_arrow.png) no-repeat right center,url(../images/common/ico_register.png) no-repeat left center;
+	background-size:7px,24px;
+}
+.chargeSelectArea ul li a{
+	display:block;
+	padding: 15px 35px;
+}
